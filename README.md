@@ -1,1 +1,1 @@
-# dinamyc-button
+# dynamic-button
