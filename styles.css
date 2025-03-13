@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+button.loading-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    padding-inline: 1.64rem;
+
+    .spinner-border {
+        width: 19px;
+        height: 19px;
+    }
+
+    .box-button-loading {
+        transition: 1s ease;
+        width: 0;
+        height: 19px;
+        opacity: 0;
+    }
+
+    span {
+        transition: 1s ease;
+    }
+}
+
+button.loading-button--loading {
+    padding-inline: 0.8em;
+
+    .box-button-loading {
+        opacity: 1;
+        width: 19px;
+    }
+
+    span {
+        margin-left: 0.5em;
+    }
+}
